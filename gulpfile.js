@@ -22,7 +22,7 @@ function customPlumber(errTitle) {
 gulp.task('browserSync', function () {
     browserSync({
         server: {
-            baseDir: 'app',
+            baseDir: '.',
         },
     })
 });
@@ -53,7 +53,7 @@ gulp.task('css-modules', function() {
 gulp.task('watch', ['browserSync', 'sass'], function () {
     gulp.watch('app/scss/**/*.scss', ['sass']);
     gulp.watch('app/js/**/*.js', browserSync.reload);
-    gulp.watch('app/*.html', browserSync.reload);
+    gulp.watch('*.html', browserSync.reload);
 });
 
 gulp.task('default', ['watch'], function() {
