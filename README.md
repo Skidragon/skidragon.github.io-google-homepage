@@ -1,6 +1,6 @@
 # The Odin Project - Google Homepage
 
-This website is responsive for mobile (landscape and portrait) plus it can be used on desktop: Here is the link to the site: [Google Homepage]()
+This website is responsive for mobile (landscape and portrait) plus it can be used on desktop: Here is the link to the site: [Google Homepage](https://skidragon.github.io/skidragon.github.io-google-homepage/)
 
 There is another way to view the project by cloning the repo on your computer and using the gulp command in the terminal to run a local server.
 
