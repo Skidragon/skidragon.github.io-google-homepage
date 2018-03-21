@@ -1,0 +1,33 @@
+@import 'global/variables',
+'global/media-queries',
+'modules/header',
+'modules/navbar',
+'modules/form',
+'modules/aside',
+'modules/footer';
+.header-main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.img {
+    &-google {
+        display: block;
+        margin: 9rem auto 1rem auto;
+    }
+}
+
+.footer-main {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    @include device-sm {
+        position: relative;
+    }
+    @include device-xs {
+        position: relative;
+    }
+}

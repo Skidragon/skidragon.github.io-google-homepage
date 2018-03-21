@@ -1,0 +1,40 @@
+@import '../global/variables',
+'../global/mixins',
+'../global/media-queries';
+.header-main {
+    height: 4rem;
+    padding: .5rem 1rem;
+    &__nav {
+        height: 100%;
+        width: 100%;
+    }
+    &__list--left {
+        display: inline;
+        float: left;
+    }
+    &__list--right {
+        display: inline;
+        float: right;
+    }
+   
+    &__item {
+        display: inline;
+        margin-left: .6rem;
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+    &__link {
+        color: $color-black;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &__icon {
+        color: $color-grey;
+        &:hover {
+            color: $color-black;
+        }
+    }
+   
+}

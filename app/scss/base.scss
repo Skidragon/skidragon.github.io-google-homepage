@@ -1,0 +1,19 @@
+@import 'global/variables',
+'global/media-queries';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 1rem/1.35 sans-serif, Courier, Garamond;
+}
+
+html,
+body {
+    background: $color-white;
+}
+
+a {
+    color: $color-black;
+    text-decoration: none;
+}
+

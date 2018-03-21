@@ -1,0 +1,10 @@
+@mixin remove-outside-lines {
+    border: 0;
+    outline: 0;
+}
+
+@mixin transparent-bg {
+    background: transparent;
+    outline: 0;
+    border: 0;
+}

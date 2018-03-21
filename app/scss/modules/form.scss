@@ -1,0 +1,76 @@
+@import '../global/variables',
+'../global/mixins',
+'../global/media-queries';
+.form-search {
+    position: relative;
+    margin: 0 auto;
+    height: 10rem;
+    width: 80%;
+    &__search-container {
+        display: block;
+        position: relative;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 30rem;
+    }
+    &__text-box {
+       width: 100%;
+        font-size: 1.5rem;
+        @include device-xs {
+            border-radius: .5rem;
+        }
+    }
+    &__btn-mic {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        bottom: 0;
+        transform: translate(-50%,-50%);
+        width: 1rem;
+        cursor: pointer;
+        @include device-xs {
+            display: none;
+        }
+    }
+    &__btn-search {
+        display: none;
+        @include device-xs {
+            @include remove-outside-lines;
+            display: block;
+            position: absolute;
+            top: 0;
+            right:0;
+            bottom: 0;
+            width: 3rem;
+            border-top-right-radius: .5rem;
+            border-bottom-right-radius: .5rem;            
+            background: $color-primary;
+            color: $color-white;
+        }
+    }
+    &__btn-container {
+        position: absolute;
+        margin-top: 1.5rem;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+    &__btn {
+        @include remove-outside-lines;
+        height: 3rem;
+        padding: .6rem;
+        margin: 0 1rem;
+        font-weight: bold;
+        font-size: .8rem;
+        border-radius: .2rem;
+        color: $color-grey;
+        &:hover {
+            border: .08rem solid $color-black;
+            color: $color-black;
+        }
+        &:active {
+            filter: brightness(103%);
+            border: .08rem solid $color-primary;
+        }
+    }
+}

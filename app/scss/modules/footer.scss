@@ -1,0 +1,55 @@
+@import '../global/variables',
+'../global/media-queries';
+
+.footer-main {
+    height: 3rem;
+    padding: 1rem;
+    background: #f1f1f1;
+    border-top: #afafaf;
+    @include device-xs {
+        height: 5rem;
+    }
+    &__nav {
+    height: 100%;
+    width: 100%;
+    @include device-xs {
+        transform: rotate(180deg);
+    }
+    }
+
+    &__list--left {
+        display: inline;
+        float: left;
+        @include device-xs {
+            display: block;
+            text-align: center;
+            float: none;
+            transform: rotate(180deg);
+        }
+       
+    }
+    &__list--right {
+        display: inline;
+        float: right;
+        @include device-xs {
+            display: block;
+            text-align: center;
+            float: none;
+            margin: .5rem 0 0 0;
+            transform: rotate(180deg);
+        }
+        
+    }
+    &__item  {
+        display: inline;
+        margin-left: .3rem;
+    }
+    &__link {
+        color: $color-grey;
+
+        &:hover {
+            text-decoration: underline;
+        }
+       
+    }
+}

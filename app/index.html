@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
+</head>
+
+<body>
+    <header class="header-main">
+        <nav class="header-main__nav">
+            <ul class="header-main__list--left">
+                <li class="header-main__item">
+                    <a href="#" class="header-main__link">About</a>
+                </li>
+                <li class="header-main__item">
+                    <a href="#" class="header-main__link">Store</a>
+                </li>
+            </ul>
+            <ul class="header-main__list--right">
+                <li class="header-main__item">
+                    <a href="#" class="header-main__link">Gmail</a>
+                </li>
+                <li class="header-main__item">
+                    <a href="#" class="header-main__link">Images</a>
+                </li>
+                <li class="header-main__item">
+                    <a href="#" class="header-main__link header-main__icon"><i class="fas fa-th"></i></a>
+                </li>
+                <li class="header-main__item">
+                    <a href="#" class="header-main__link header-main__icon"><i class="far fa-bell"></i></a>
+                </li>
+        
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <picture class="pic-google">
+            <source srcset="assets/images/logo-google-lg.png" class="img-google" media="(min-width: 600px)">
+            <img src="assets/images/logo-google-sm.png" class="img-google" alt="Google Logo">
+        </picture>
+        <form class="form-search" method="GET">
+
+            <!-- The container lets the search btn go inside the text box -->
+            <div class="form-search__search-container">
+                <input type="text" class="form-search__text-box">
+                <img src = "assets/images/google-mic.svg" class="form-search__btn-mic" title="Search by Voice">
+                <button class = "form-search__btn-search"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="form-search__btn-container">
+                <input type="button" value="Google Search" class="form-search__btn">
+                <input type="button" value="Feeling Lucky?" class="form-search__btn">
+            </div>
+        </form>
+    </main>
+
+    <footer class="footer-main">
+        <nav class="footer-main__nav">
+            <ul class="footer-main__list--left">
+                <li class="footer-main__item">
+                    <a href="#" class="footer-main__link">Advertising</a>
+                </li>
+                <li class="footer-main__item">
+                    <a href="#" class="footer-main__link">Business</a>
+                </li>
+            </ul>
+            <ul class="footer-main__list--right">
+                <li class="footer-main__item">
+                    <a href="#" class="footer-main__link">Privacy</a>
+                </li>
+                <li class="footer-main__item">
+                    <a href="#" class="footer-main__link">Terms</a>
+                </li>
+                <li class="footer-main__item">
+                    <a href="#" class="footer-main__link">Settings</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

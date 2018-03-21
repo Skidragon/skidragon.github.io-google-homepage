@@ -1,0 +1,34 @@
+/* Extra Small Devices, Phones */
+
+@mixin device-xs {
+    @media only screen and (max-width: 480px) {
+        @content;
+    }
+}
+
+
+/* Small Devices, Tablets */
+
+@mixin device-sm {
+    @media only screen and (min-width: 481px) and (max-width: 700px) {
+        @content;
+    }
+}
+
+
+/* Medium Devices, Desktops */
+
+@mixin device-md {
+    @media only screen and (min-width: 701px) {
+        @content;
+    }
+}
+
+
+/* Large Devices, Wide Screens */
+
+@mixin device-lg {
+    @media only screen and (min-width: 1200px) {
+        @content;
+    }
+}
